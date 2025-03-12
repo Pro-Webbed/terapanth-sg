@@ -1,0 +1,149 @@
+:root {
+    --clr-chocolate: #d2691e;
+    --clr-background: rgba(255, 255, 255, 0.563);
+    --clr-body: #7fffd4;
+    --clr-activeLink: #add8e6;
+    --clr-textColor: #20b2aa;
+    --clr-cardColor: #000080;
+    --clr-linkColor: #8a2be2;
+}
+
+body {
+    font-family: "Lora", Verdana, Geneva, Tahoma, sans-serif;
+    background-color: var(--clr-body);
+    margin: 0;
+    padding: 0;
+}
+
+a:active {
+    color: var(--clr-activeLink);
+}
+
+.header {
+    text-align: center;
+    background-color: var(--clr-background);
+    font-family: "Lora", Verdana, Geneva, Tahoma, sans-serif;
+    margin: 10px;
+    border-radius: 10px;
+    color: var(--clr-chocolate);
+    padding: 10px;
+}
+
+.header img {
+    display: block;
+    margin: 0 auto;
+}
+
+#terapanthLogo {
+    width: 7.5%;
+    height: auto;
+    max-width: 100px;
+}
+
+.tab {
+    padding: 15px;
+    margin: 5px;
+    color: var(--clr-textColor);
+    background-color: transparent;
+    border-radius: 25px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.card .tab {
+    text-align: right;
+}
+
+.card {
+    width: 90%;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: var(--clr-background);
+    border-radius: 10px;
+    text-align: left;
+    color: var(--clr-cardColor);
+}
+
+.link {
+    text-decoration: none;
+    color: var(--clr-linkColor);
+}
+
+.directory {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+iframe {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.footer {
+    text-align: center;
+    width: 100%;
+    background-color: transparent;
+    color: var(--clr-textColor);
+    position: fixed;
+    bottom: 0;
+    padding: 10px 0;
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 768px) {
+    .header {
+        margin: 5px;
+        padding: 5px;
+    }
+
+    #terapanthLogo {
+        width: 15%;
+    }
+
+    .tab {
+        padding: 10px;
+        margin: 3px;
+        font-size: 0.9em;
+    }
+
+    .card {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .directory {
+        height: auto;
+        padding: 20px 0;
+    }
+
+    iframe {
+        height: 300px;
+    }
+}
+
+/* Small Mobile Styles */
+@media screen and (max-width: 480px) {
+    .header h1 {
+        font-size: 1.5em;
+    }
+
+    #terapanthLogo {
+        width: 20%;
+    }
+
+    .tab {
+        padding: 8px;
+        font-size: 0.8em;
+    }
+
+    .card {
+        padding: 10px;
+    }
+
+    iframe {
+        height: 200px;
+    }
+}
